@@ -87,7 +87,7 @@ enum ShrineBuilder {
         gold.roughness = .float(0.3)
 
         let base = ModelEntity(
-            mesh: .generateBox(width: 1.70, height: 0.68, depth: 0.48, cornerRadius: 0.02),
+            mesh: .generateBox(width: 2.05, height: 0.68, depth: 0.80, cornerRadius: 0.02),
             materials: [wood]
         )
         base.name = "AltarBase"
@@ -96,7 +96,7 @@ enum ShrineBuilder {
         root.addChild(base)
 
         let top = ModelEntity(
-            mesh: .generateBox(width: 1.80, height: 0.04, depth: 0.54, cornerRadius: 0.015),
+            mesh: .generateBox(width: 2.15, height: 0.04, depth: 0.86, cornerRadius: 0.015),
             materials: [wood]
         )
         top.name = "AltarTop"
@@ -104,16 +104,16 @@ enum ShrineBuilder {
         root.addChild(top)
 
         let runner = ModelEntity(
-            mesh: .generateBox(width: 1.60, height: 0.008, depth: 0.24, cornerRadius: 0.004),
+            mesh: .generateBox(width: 1.92, height: 0.008, depth: 0.66, cornerRadius: 0.004),
             materials: [cloth]
         )
         runner.name = "AltarCloth"
         runner.position = SIMD3(0, 0.725, -1.35)
         root.addChild(runner)
 
-        for x in [-0.815, 0.815] as [Float] {
+        for x in [-0.985, 0.985] as [Float] {
             let trim = ModelEntity(
-                mesh: .generateBox(width: 0.025, height: 0.035, depth: 0.5, cornerRadius: 0.005),
+                mesh: .generateBox(width: 0.025, height: 0.035, depth: 0.82, cornerRadius: 0.005),
                 materials: [gold]
             )
             trim.position = SIMD3(x, 0.715, -1.35)

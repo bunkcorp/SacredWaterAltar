@@ -33,6 +33,30 @@ Sacred Water Altar bundles third-party 3D models. Respect each license when redi
 - **Attribution required** for redistribution
 - **Note:** The USDZ conversion dropped GLB vertex colors. This app applies a bronze/gold material at runtime.
 
+## Medicine Buddha Mantra Wheel
+
+- **Author:** katherinemunro33 ([Sketchfab](https://sketchfab.com/katherinemunro33))
+- **Source:** https://sketchfab.com/3d-models/medicine-buddha-mantra-wheel-c305fd3fc4c8447db8ed278781d2b6ae
+- **License:** [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
+- **File:** `Resources/Models/Medicine_Buddha_Mantra_Wheel.usdz`
+- **Attribution required** for redistribution
+
+## Om Mani Padme Hum Mantra with Lotus
+
+- **Author:** katherinemunro33 ([Sketchfab](https://sketchfab.com/katherinemunro33))
+- **Source:** https://sketchfab.com/3d-models/om-mani-padme-hum-mantra-with-lotus-a5b2c506f43e449ba1eb68dc885785b8
+- **License:** [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
+- **File:** `Resources/Models/Om_Mani_Padme_Hum_Mantra_with_Lotus.usdz`
+- **Attribution required** for redistribution
+
+## Green Tara Mantra
+
+- **Author:** katherinemunro33 ([Sketchfab](https://sketchfab.com/katherinemunro33))
+- **Source:** https://sketchfab.com/3d-models/green-tara-mantra-fa07c9b2f48c46d29b2b0e96fa9afa5d
+- **License:** [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
+- **File:** `Resources/Models/Green_Tara_Mantra.usdz`
+- **Attribution required** for redistribution
+
 ## Audio
 
 Bowl tones (`bowl_tone_1.wav` … `bowl_tone_7.wav`) are synthesized for this project and may be reused with the app.

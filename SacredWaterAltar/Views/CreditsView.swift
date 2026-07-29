@@ -34,6 +34,24 @@ struct CreditsView: View {
                         license: "CC-BY-4.0",
                         url: "https://sketchfab.com/3d-models/vajrasattva-full-5deb88eed021488ea72c18f97c9250e0"
                     )
+                    credit(
+                        title: "Medicine Buddha Mantra Wheel",
+                        author: "katherinemunro33",
+                        license: "CC-BY-4.0",
+                        url: "https://sketchfab.com/3d-models/medicine-buddha-mantra-wheel-c305fd3fc4c8447db8ed278781d2b6ae"
+                    )
+                    credit(
+                        title: "Om Mani Padme Hum Mantra with Lotus",
+                        author: "katherinemunro33",
+                        license: "CC-BY-4.0",
+                        url: "https://sketchfab.com/3d-models/om-mani-padme-hum-mantra-with-lotus-a5b2c506f43e449ba1eb68dc885785b8"
+                    )
+                    credit(
+                        title: "Green Tara Mantra",
+                        author: "katherinemunro33",
+                        license: "CC-BY-4.0",
+                        url: "https://sketchfab.com/3d-models/green-tara-mantra-fa07c9b2f48c46d29b2b0e96fa9afa5d"
+                    )
 
                     Text("Notes")
                         .font(.headline)
