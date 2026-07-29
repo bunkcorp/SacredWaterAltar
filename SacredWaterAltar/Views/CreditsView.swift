@@ -35,6 +35,12 @@ struct CreditsView: View {
                         url: "https://sketchfab.com/3d-models/vajrasattva-full-5deb88eed021488ea72c18f97c9250e0"
                     )
                     credit(
+                        title: "Swayambhu Stupa",
+                        author: "RPSMABT",
+                        license: "CC-BY-4.0",
+                        url: "https://sketchfab.com/3d-models/swayambhu-stupa-44bc6c3fc17b4d04914a7903f34c28b9"
+                    )
+                    credit(
                         title: "Medicine Buddha Mantra Wheel",
                         author: "katherinemunro33",
                         license: "CC-BY-4.0",

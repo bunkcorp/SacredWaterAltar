@@ -33,6 +33,14 @@ Sacred Water Altar bundles third-party 3D models. Respect each license when redi
 - **Attribution required** for redistribution
 - **Note:** The USDZ conversion dropped GLB vertex colors. This app applies a bronze/gold material at runtime.
 
+## Swayambhu Stupa
+
+- **Author:** RPSMABT ([Sketchfab](https://sketchfab.com/rpsmabt))
+- **Source:** https://sketchfab.com/3d-models/swayambhu-stupa-44bc6c3fc17b4d04914a7903f34c28b9
+- **License:** [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
+- **File:** `Resources/Models/Swayambhu_Stupa.usdz`
+- **Attribution required** for redistribution
+
 ## Medicine Buddha Mantra Wheel
 
 - **Author:** katherinemunro33 ([Sketchfab](https://sketchfab.com/katherinemunro33))

@@ -114,6 +114,7 @@ final class AppModel {
         async let goldenTask = loadResult(named: "Golden_Buddha_Statue", targetHeight: 0.58, style: .original)
         async let seatedTask = loadResult(named: "1973", targetHeight: 0.42, style: .original)
         async let vajraTask = loadResult(named: "Vajrasattva_Full", targetHeight: 0.50, style: .bronzeGold)
+        async let stupaTask = loadResult(named: "Swayambhu_Stupa", targetHeight: 1.55, style: .original)
         async let bowlTask = loadResult(named: "Tibetan_Singing_Bowl", targetHeight: 0.08, style: .original)
         async let medicineTask = loadMantraResult(named: "Medicine_Buddha_Mantra_Wheel", targetSize: 0.20)
         async let omManiTask = loadMantraResult(named: "Om_Mani_Padme_Hum_Mantra_with_Lotus", targetSize: 0.15)
@@ -122,10 +123,19 @@ final class AppModel {
         let golden = await goldenTask
         let seated = await seatedTask
         let vajra = await vajraTask
+        let stupa = await stupaTask
         let bowl = await bowlTask
         let medicine = await medicineTask
         let omMani = await omManiTask
         let tara = await taraTask
+
+        // A large architectural backdrop, planted on the floor behind the altar and statues.
+        switch stupa {
+        case .success(let entity):
+            placeAnchored(entity, at: SIMD3(0, 0, -2.12), name: "SwayambhuStupa")
+        case .failure(let error):
+            loadWarnings.append("Swayambhu Stupa failed: \(error.localizedDescription)")
+        }
 
         switch golden {
         case .success(let entity):
@@ -163,7 +173,7 @@ final class AppModel {
 
         let loadedAny =
             golden.isSuccess || seated.isSuccess || vajra.isSuccess || bowl.isSuccess
-            || medicine.isSuccess || omMani.isSuccess || tara.isSuccess
+            || stupa.isSuccess || medicine.isSuccess || omMani.isSuccess || tara.isSuccess
         guard loadedAny else {
             throw ShrineError.noAssetsLoaded
         }
