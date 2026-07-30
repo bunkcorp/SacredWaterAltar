@@ -27,10 +27,10 @@ struct PhoneShrineView: View {
     private let focusLocal = SIMD3<Float>(0, 0.82, -1.20)
     /// Camera distance from the pivot at zoom 1; zooming dollies in and out of this.
     private let baseDistance: Float = 2.5
-    private let minZoom: Float = 0.45
+    private let minZoom: Float = 0.55
     private let maxZoom: Float = 16
     private let minDistance: Float = 0.1
-    private let maxDistance: Float = 5.6
+    private let maxDistance: Float = 4.7
     private let minPitch: Float = -0.45
     private let maxPitch: Float = 1.15
 
