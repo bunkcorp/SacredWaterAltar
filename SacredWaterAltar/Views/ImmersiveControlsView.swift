@@ -1,3 +1,4 @@
+#if os(visionOS)
 import SwiftUI
 
 struct ImmersiveControlsView: View {
@@ -24,3 +25,4 @@ struct ImmersiveControlsView: View {
         .background(.ultraThinMaterial, in: Capsule())
     }
 }
+#endif

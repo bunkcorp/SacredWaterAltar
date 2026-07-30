@@ -4,18 +4,21 @@ import SwiftUI
 struct SacredWaterAltarApp: App {
     @State private var appModel = AppModel()
 
+#if os(visionOS)
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.dismissWindow) private var dismissWindow
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @Environment(\.openWindow) private var openWindow
     @Environment(\.scenePhase) private var scenePhase
+#endif
 
     init() {
         BowlIndexComponent.register()
     }
 
     var body: some Scene {
-        makeDefaultScenes()
+#if os(visionOS)
+        makeVisionScenes()
             .environment(appModel)
             .onChange(of: appModel.viewState) { _, toState in
                 Task { @MainActor in
@@ -32,10 +35,17 @@ struct SacredWaterAltarApp: App {
                     appModel.handleBackground()
                 }
             }
+#else
+        WindowGroup {
+            ContentView()
+                .environment(appModel)
+        }
+#endif
     }
 
+#if os(visionOS)
     @SceneBuilder
-    private func makeDefaultScenes() -> some Scene {
+    private func makeVisionScenes() -> some Scene {
         ContentWindow()
         ImmersiveScene()
     }
@@ -64,4 +74,5 @@ struct SacredWaterAltarApp: App {
         appModel.immersiveSpaceState = .closed
         openWindow(id: ContentWindow.sceneID)
     }
+#endif
 }

@@ -1,3 +1,4 @@
+#if os(visionOS)
 import SwiftUI
 
 struct ImmersiveScene: Scene {
@@ -10,3 +11,4 @@ struct ImmersiveScene: Scene {
         .immersionStyle(selection: .constant(.mixed), in: .mixed)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(visionOS)
 import RealityKit
 import SwiftUI
 
@@ -42,3 +43,4 @@ struct ImmersiveView: View {
         return nil
     }
 }
+#endif
